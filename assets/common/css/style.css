@@ -247,20 +247,24 @@ figure {
 .select-device-container{
 	padding: 60px 15px 0;
 }
-.select-device-container ul{
+.select-device-container .devices{
 	text-align: center;
 	padding: 0;
 }
-.select-device-container ul li{
+.select-device-container .device{
 	display: inline-block;
 	vertical-align: top;
 	width: 31%;
 }
-.select-device-container ul li:nth-child(2){
+.select-device-container .device:nth-child(2){
 	margin: 0 2%;
 }
-.select-device-container ul li img{
+.select-device-container .device img{
 	width: 100%;
+}
+.select-device-container .device span.address{
+	display: block;
+	margin-bottom: 15px;
 }
 .select-device-container > h2{
 	text-align: center;
@@ -280,4 +284,10 @@ figure {
 }
 .logo_area img{
 	width: 100%;
+}
+.error{
+	color: red;
+	font-size: 12px;
+	text-align: left;
+	display: none;
 }
