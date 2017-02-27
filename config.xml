@@ -8,5 +8,5 @@ version     = "1.0.0" >
   <!--
     This allows your app to load assets from all *.phongap.com domains
   -->
-  <access origin="https://czar.brightideacloud.com" subdomains="true" />
+  <access origin="*" launch-external="yes"/>
 </widget>
