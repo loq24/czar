@@ -9,7 +9,7 @@ version     = "1.0.0" >
   <!--
     InAppBrowser plugin
   -->  
-  <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
+   <plugin name="cordova-plugin-inappbrowser" />
 
   <!--
     This allows your app to load assets from all *.phongap.com domains
