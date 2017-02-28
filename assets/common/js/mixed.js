@@ -32,7 +32,7 @@ jQuery(document).ready(function($){
 	//* when device view on click
 	$('body').on('click', 'a.device_view', function() {
     	var href = $(this).data('href');
-    	window.open(href, '_blank', 'location=no,hidden=yes,closebuttoncaption=Done,toolbar=no');
+    	window.open(href, '_system', 'location=no,hidden=yes,closebuttoncaption=Done,toolbar=no');
 	});
 });
 
