@@ -5,10 +5,16 @@ id          = "com.phonegap.example"
 versionCode = "10"
 version     = "1.0.0" >
 
+
+  <!--
+    InAppBrowser plugin
+  -->  
+  <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
+
   <!--
     This allows your app to load assets from all *.phongap.com domains
   -->
-   <access origin="*"/>
+   <access origin="*" />
     <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
     <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
     <plugin name="cordova-plugin-whitelist" version="1" />
@@ -25,5 +31,5 @@ version     = "1.0.0" >
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    
+
 </widget>
