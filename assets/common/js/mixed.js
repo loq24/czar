@@ -11,7 +11,7 @@ jQuery(document).ready(function($){
 		        		device += '<div class="device">';
 		         		device += '<h2>'+json[i]['name']+'</h2>';
 		         		device += '<span class="address">'+json[i]['location']+'</span>';
-		         		device += '<a id="device_view" href="https://czar.brightideacloud.com/'+id+'/digital-signage/?device='+json[i]['id']+'">View Device</a>';
+		         		device += '<a class="device_view" data-href="https://czar.brightideacloud.com/'+id+'/digital-signage/?device='+json[i]['id']+'">View Device</a>';
 		         		device += '</div>';
 		         	}
 		         	$('.devices').html(device);		         			         	
@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
 	        	
 			}).fail(function() {
 			    $('#account_id').css('border', '1px solid red');
-			    $('.form-signin .error').text('No subsite found.');
+			    $('.form-signin .error').text('Account not found.');
 			    $('.form-signin .error').show();
 			});
 	    }
@@ -29,4 +29,11 @@ jQuery(document).ready(function($){
 		    $('.form-signin .error').hide();
 	    }
 	});	
+	//* when device view on click
+	$('body').on('click', 'a.device_view', function() {
+    	var href = $(this).data('href');
+    	window.open(href, '_blank', 'location=no,hidden=yes,closebuttoncaption=Done,toolbar=no');
+	});
 });
+
+
