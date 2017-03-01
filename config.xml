@@ -9,7 +9,10 @@ version     = "1.0.0" >
   <!--
     InAppBrowser plugin
   -->  
-   <plugin name="cordova-plugin-inappbrowser" spec="1.6.1" />
+  <feature name="InAppBrowser">
+    <param name="android-package" value="org.apache.cordova.InAppBrowser" />
+  </feature>
+   <!-- <plugin name="cordova-plugin-inappbrowser" spec="1.6.1" /> -->
 
 
   <!--
