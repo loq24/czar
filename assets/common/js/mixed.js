@@ -38,9 +38,7 @@ jQuery(document).ready(function($){
 });
 
 function openPage(url) { 
-    var target = "_blank"; 
-    var options = "location=yes,hidden=yes"; 
-    inAppBrowserRef = cordova.InAppBrowser.open(url, target, options); 
+     var ref = window.open(encodeURI(url), '_blank', 'location=no,closebuttoncaption=Main');
     // inAppBrowserRef.addEventListener('loadstart', loadStartCallBack); 
     // inAppBrowserRef.addEventListener('loadstop', loadStopCallBack); 
     // inAppBrowserRef.addEventListener('loaderror', loadErrorCallBack); 
