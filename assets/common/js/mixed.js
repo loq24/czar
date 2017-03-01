@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
 		         		device += '<h2>'+json[i]['name']+'</h2>';
 		         		device += '<span class="address">'+json[i]['location']+'</span>';
 		         		//device += '<a class="device_view" data-href="https://czar.brightideacloud.com/'+id+'/digital-signage/?device='+json[i]['id']+'">View Device</a>';
-		         		device += '<a class="device_view" onclick="window.open("https://czar.brightideacloud.com")">View Device</a>';
+		         		device += '<a class="device_view" onclick="window.open(\'https://czar.brightideacloud.com\')">View Device</a>';
 		         		device += '</div>';
 		         	}
 		         	$('.devices').html(device);		         			         	
