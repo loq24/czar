@@ -11,8 +11,8 @@ jQuery(document).ready(function($){
 		        		device += '<div class="device">';
 		         		device += '<h2>'+json[i]['name']+'</h2>';
 		         		device += '<span class="address">'+json[i]['location']+'</span>';
-		         		//device += '<a class="device_view" data-href="https://czar.brightideacloud.com/'+id+'/digital-signage/?device='+json[i]['id']+'">View Device</a>';
-		         		device += '<a class="device_view" onclick="window.open(\'https://czar.brightideacloud.com\')">View Device</a>';
+		         		device += '<a class="device_view" data-href="https://czar.brightideacloud.com/'+id+'/digital-signage/?device='+json[i]['id']+'">View Device</a>';
+		         		//device += '<a class="device_view" onclick="window.open(\'https://czar.brightideacloud.com\')">View Device</a>';
 		         		device += '</div>';
 		         	}
 		         	$('.devices').html(device);		         			         	
@@ -33,8 +33,17 @@ jQuery(document).ready(function($){
 	//* when device view on click
 	$('body').on('click', 'a.device_view', function() {
     	var href = $(this).data('href');
-    	var ref = window.open(href, '_blank', 'location=no');
+    	openPage(href);
 	});
 });
+
+function openPage(url) { 
+    var target = "_blank"; 
+    var options = "location=yes,hidden=yes"; 
+    inAppBrowserRef = cordova.InAppBrowser.open(url, target, options); 
+    // inAppBrowserRef.addEventListener('loadstart', loadStartCallBack); 
+    // inAppBrowserRef.addEventListener('loadstop', loadStopCallBack); 
+    // inAppBrowserRef.addEventListener('loaderror', loadErrorCallBack); 
+}
 
 
