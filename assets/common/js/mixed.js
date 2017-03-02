@@ -38,7 +38,8 @@ jQuery(document).ready(function($){
 });
 
 function openPage(url) { 
-     var ref = window.open(encodeURI(url), '_system', 'location=no,closebuttoncaption=Main');
+	navigator.app.loadUrl(url, { openExternal:true });
+     //var ref = window.open(encodeURI(url), '_system', 'location=no,closebuttoncaption=Main');
     // inAppBrowserRef.addEventListener('loadstart', loadStartCallBack); 
     // inAppBrowserRef.addEventListener('loadstop', loadStopCallBack); 
     // inAppBrowserRef.addEventListener('loaderror', loadErrorCallBack); 
