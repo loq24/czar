@@ -5,6 +5,8 @@ id          = "com.phonegap.example"
 versionCode = "10"
 version     = "1.0.0" >
 
+   <name>CZAR.IO</name>
+  <description>Command Your Digital Signage</description>
 
   <icon src="assets/common/img/logo.png" />
 
