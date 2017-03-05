@@ -8,7 +8,7 @@ version     = "1.0.0" >
    <name>CZAR.IO</name>
   <description>Command Your Digital Signage</description>
 
-  <icon src="assets/common/img/logo.png" />
+  <icon src="assets/common/img/icon.png" />
 
   <!--
     InAppBrowser plugin
